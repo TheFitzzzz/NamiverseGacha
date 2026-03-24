@@ -6,7 +6,7 @@ window.onload = function() {
 }
 
 function randomNumber(min, max) { 
-    return Math.ceil(Math.random() * (max - min) + min);
+     return Math.floor(Math.random() * (max - min) + min + 1);
 } 
 
 function openPack() {
@@ -32,7 +32,7 @@ function openPack() {
         if (i == 10) {
             num = randomNumber(16, 25); //rare card for the last card
         } else {
-            num = randomNumber(1, 15); 
+            num = randomNumber(0, 15); 
         }
 
         cardImg.src = "./NamiCards/card(" + num.toString() + ").png";
