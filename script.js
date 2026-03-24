@@ -35,8 +35,7 @@ function openPack() {
             num = randomNumber(17, 24); 
         }
 
-        numStr = num.toString()
-        cardImg.src = `./NamiCards/card(${numStr}).png`
+        cardImg.src = "./NamiCards/card(" + num.toString() + ").png";
 
         cardDiv.appendChild(cardImg);
 
