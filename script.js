@@ -30,9 +30,9 @@ function openPack() {
 
         let num = 1;
         if (i == 10) {
-            num = randomNumber(1, 16); //rare card for the last card
+            num = randomNumber(16, 25); //rare card for the last card
         } else {
-            num = randomNumber(17, 24); 
+            num = randomNumber(1, 15); 
         }
 
         cardImg.src = "./NamiCards/card(" + num.toString() + ").png";
