@@ -30,7 +30,7 @@ function openPack() {
 
         let num = 1;
         if (i == 10) {
-            num = randomNumber(16, 25); //rare card for the last card
+            num = randomNumber(16, 24); //rare card for the last card
         } else {
             num = randomNumber(0, 15); 
         }
